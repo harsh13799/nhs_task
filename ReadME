@@ -1,0 +1,13 @@
+- Host this folder to IIS Web server
+
+- Install Live Server Exention in VSCode
+
+- Restore the database using nhs.bak file in MSSQL Management Stdio
+
+- Run the app
+
+Admin Access URL
+localhost/admin.html
+
+User URL
+localhost/index.html

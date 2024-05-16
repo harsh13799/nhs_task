@@ -1,0 +1,24 @@
+.btn {
+    color: white;
+    padding: 7px 7px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+.btn-details{
+    width: 30%
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+label {
+    font-weight: 600;
+    color: #000;
+}
+
+body {
+  background: #f1f1f1;
+}
