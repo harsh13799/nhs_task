@@ -1,13 +1,62 @@
-- Host this folder to IIS Web server
+# NHS TASK
 
-- Install Live Server Exention in VSCode
+## Prerequisites
 
-- Restore the database using nhs.bak file in MSSQL Management Stdio
+Before running the application, ensure you have the following:
 
-- Run the app
+- Install PHP latest version 
+- Install ODBS driver
+- Visual Studio Code installed
+- Live Server extension installed in VSCode
+- Microsoft SQL Server Management Studio installed to restore the database or to run the script
+- Enable IIS Web server from Active Windows Feature if not
+- The provided `nhs.bak` file to restore the database
+- The provided `scripts.sql` to run the script alternative way of restoring backup
 
-Admin Access URL
-localhost/admin.html
+## Setup
 
-User URL
-localhost/index.html
+1. **Restore the Database**: 
+   - Open Microsoft SQL Server Management Studio.
+   - Restore the database using the provided `nhs.bak` file.
+   - Or run the scripts.sql
+
+2. **Host the Application**:
+   - Host the root folder on an IIS Web server by copying it to wwwroot folder.
+
+3. **Run the Application**:
+   - Open Visual Studio Code.
+   - Install the Live Server extension if not already installed.
+   - Open the project folder in VSCode.
+   - Navigate to `admin.html` and `index.html` files.
+   - Right-click on each file and select "Open with Live Server" to run the admin and user interfaces respectively.
+
+## Access URLs
+
+- **Admin Access URL**: `http://localhost/admin.html`
+  - This URL is used to access the admin interface for managing patient records.
+
+- **User Access URL**: `http://localhost/index.html`
+  - This URL is used to access the user interface of patient records and responses in form.
+
+## Functionality
+
+### Admin Interface
+
+- The admin interface allows administrators to perform the following actions:
+  - View, Edit, or delete patient records.
+
+### User Interface
+
+- Users can fill the details in the form
+
+## File Structure
+
+- **admin.html**: HTML file for the admin interface.
+- **index.html**: HTML file for the patient interface.
+- **details.html**: HTML file for the patient response details interface.
+- **api/**: Backend logic developed in PHP.
+
+## Database Schema
+
+- The database schema includes tables for storing patient information and responses to medical assessments.
+- Tables include `Patients` and `PatientsResponse` for managing patient data.

@@ -26,21 +26,21 @@
                         <div class="col-sm-6 form-group mt-1">
                             <label class="mb-2" for="fname">First Name</label>
                             <input type="text" class="form-control" name="fname" id="fname"
-                                placeholder="Enter your first name" value="test1" required>
+                                placeholder="Enter your first name" required>
                         </div>
                         <div class="col-sm-6 form-group mt-1">
                             <label class="mb-2" for="sname">Surname</label>
                             <input type="text" class="form-control" name="sname" id="sname"
-                                placeholder="Enter your surname" value="test2" required>
+                                placeholder="Enter your surname" required>
                         </div>
                         <div class="col-sm-6 form-group mt-3">
                             <label class="mb-2" for="dob">Date Of Birth</label>
-                            <input type="date" name="dob" class="form-control" value="2023-05-13" id="dob" required>
+                            <input type="date" name="dob" class="form-control" id="dob" required>
                         </div>
                         <div class="col-sm-6 form-group mt-3 mb-3">
                             <label class="mb-2" for="age">Age</label>
                             <input type="number" class="form-control" name="age" id="age"
-                                placeholder="Age will be calculated as per your date of birth" value="23" disabled
+                                placeholder="Age will be calculated as per your date of birth" disabled
                                 required>
                         </div>
 
@@ -53,56 +53,56 @@
                         <div class="form-group">
                             <label class="mb-2 mt-2" for="relief_score">How much relief have pain treatments
                                 or medications <u>FROM THIS CLINIC</u> provided?</label>
-                            <input max="100" min="0" type="text" class="form-control"
-                                placeholder="Enter a number between 0 to 100"value="10" id="relief_score">
+                            <input max="100" min="0" type="number" class="form-control"
+                                placeholder="Enter a number between 0 to 100" id="relief_score">
                         </div>
                         <div class="form-group">
                             <label class="mb-2 mt-4" for="worst_pain">Please rate your pain based on the number that
                                 best describes your pain at it's
                                 <u>WORST</u> in the past week.</label>
                             <input max="10" min="0" type="number" class="form-control"
-                                placeholder="Enter a number between 0 to 10"value="10" id="worst_pain">
+                                placeholder="Enter a number between 0 to 10" id="worst_pain">
                         </div>
                         <div class="form-group">
                             <label class="mb-2 mt-4" for="least_pain">Please rate your pain based on the number that
                                 best describes your pain at it's
                                 <u>LEAST</u> in the past week.</label>
                             <input type="number" class="form-control" placeholder="Enter a number between 0 to 10"
-                               value="10" id="least_pain">
+                                id="least_pain">
                         </div>
                         <div class="form-group">
                             <label class="mb-2 mt-4" for="average_pain">Please rate your pain based on the number that
                                 best describes your pain on the <u>Average</u>.</label>
                             <input type="number" class="form-control" placeholder="Enter a number between 0 to 10"
-                               value="10" id="average_pain">
+                                id="average_pain">
                         </div>
                         <div class="form-group">
                             <label class="mb-2 mt-4" for="right_now">Please rate your pain based on the number that best
                                 describes your pain that tells
                                 how much pain you have <u>RIGHT NOW</u>.</label>
                             <input type="number" class="form-control" placeholder="Enter a number between 0 to 10"
-                               value="10" id="right_now">
+                                id="right_now">
                         </div>
                         <div class="form-group">
                             <label class="mb-2 mt-4" for="general_activity">Based on the number that best describes how
                                 during the past week pain has
                                 <u>INTERFERED</u> with your: General Activity.</label>
                             <input type="number" class="form-control" placeholder="Enter a number between 0 to 10"
-                               value="10" id="general_activity">
+                                id="general_activity">
                         </div>
                         <div class="form-group">
                             <label class="mb-2 mt-4" for="mood_activity">Based on the number that best describes how during the
                                 past week pain has
                                 <u>INTERFERED</u> with your: Mood.</label>
                             <input type="number" class="form-control" placeholder="Enter a number between 0 to 10"
-                               value="10" id="mood_activity">
+                                id="mood_activity">
                         </div>
                         <div class="form-group">
                             <label class="mb-2 mt-4" for="walking_ability">Based on the number that best describes how
                                 during the past week pain has
                                 <u>INTERFERED</u> with your: Walking ability.</label>
                             <input type="number" class="form-control" placeholder="Enter a number between 0 to 10"
-                               value="10" id="walking_ability">
+                                id="walking_ability">
                         </div>
                         <div class="form-group">
                             <label class="mb-2 mt-4" for="normal_work">Based on the number that best describes how
@@ -111,7 +111,7 @@
                                 housework).
                             </label>
                             <input type="number" class="form-control" placeholder="Enter a number between 0 to 10"
-                               value="10" id="normal_work">
+                                id="normal_work">
                         </div>
                         <div class="form-group">
                             <label class="mb-2 mt-4" for="relationships_activity">Based on the number that best describes how
@@ -119,7 +119,7 @@
                                 <u>INTERFERED</u> with your: Relationships with other people.
                             </label>
                             <input type="number" class="form-control" placeholder="Enter a number between 0 to 10"
-                               value="10" id="relationships_activity">
+                                id="relationships_activity">
                         </div>
                         <div class="form-group">
                             <label class="mb-2 mt-4" for="sleep_activity">Based on the number that best describes how during the
@@ -127,7 +127,7 @@
                                 <u>INTERFERED</u> with your: Sleep
                             </label>
                             <input type="number" class="form-control" placeholder="Enter a number between 0 to 10"
-                               value="10" id="sleep_activity">
+                                id="sleep_activity">
                         </div>
                         <div class="form-group">
                             <label class="mb-2 mt-4" for="enjoyment_activity">Based on the number that best describes how during
@@ -135,7 +135,7 @@
                                 <u>INTERFERED</u> with your: Enjoyment of life
                             </label>
                             <input type="number" class="form-control mb-3" placeholder="Enter a number between 0 to 10"
-                               value="10" id="enjoyment_activity">
+                                id="enjoyment_activity">
                         </div>
                     </div>
                 </div>
